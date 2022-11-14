@@ -1,0 +1,119 @@
+.header__container {
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-content {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    padding-top: 15rem;
+}
+
+.heading-content div h1 {
+    font-size: 4rem;
+}
+
+.heading-content div h5 {
+    font-size: 1.5rem;
+}
+
+/*=============== CTA ============*/
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/*=============== HEADER SOCIALS ============*/
+
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/*=============== ME ============*/
+
+.me-main {
+    width: 50%;
+    z-index: -1;
+    scale: 0.8;
+}
+
+/*=============== SCROLL DOWN ============*/
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/*========== MEDIA QUERY (MEDIUM DEVICES) ============*/
+
+@media screen and (max-width: 1024px) {
+    .header__container {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .me-main {
+        width: 70%;
+        z-index: -1;
+    }
+
+    .heading-content {
+        padding-top: 2rem;
+    }
+}
+
+/*========== MEDIA QUERY (SMALL DEVICES) ============*/
+
+@media screen and (max-width: 600px) {
+    .header__container {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .heading-content {
+        padding-top: 2rem;
+    }
+
+    .heading-content div h1 {
+        font-size: 2rem;
+    }
+
+    .heading-content div h5 {
+        font-size: 1rem;
+    }
+
+    .me-main {
+        width: 100%;
+        z-index: -1;
+    }
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }
+}
