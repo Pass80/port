@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import About from './components/about/About';
-import Contact from './components/contacts/Contact';
 import Experience from './components/experience/Experience';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
@@ -17,7 +16,6 @@ function App() {
                 <About />
                 <Experience />
                 <Portfolio />
-                <Contact />
                 <Footer />
             </>
         </div>

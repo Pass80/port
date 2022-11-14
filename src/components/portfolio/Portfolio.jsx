@@ -79,6 +79,7 @@ export default function Portfolio() {
                                     href={github}
                                     className="btn"
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     Github
                                 </a>
@@ -86,6 +87,7 @@ export default function Portfolio() {
                                     href={demo}
                                     className="btn btn-primary"
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     Live Demo
                                 </a>
