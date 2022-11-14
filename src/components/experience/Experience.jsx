@@ -1,10 +1,6 @@
 import React from 'react';
 import './Experience.css';
 import { BsPatchCheckFill } from 'react-icons/bs';
-import html from '../../assets/html.png';
-import css from '../../assets/css.png';
-import js from '../../assets/js-format.png';
-import css1 from '../../assets/css.png';
 
 export default function Experience() {
     return (
